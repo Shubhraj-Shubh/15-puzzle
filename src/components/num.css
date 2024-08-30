@@ -1,0 +1,30 @@
+.numbercard{
+    color:rgb(47, 46, 93);
+    background-color: yellow;
+width:100px;
+height:100px;
+display:flex;
+justify-content: center;
+align-items: center;
+}
+.box--1{position:absolute;left:0px;top:0px  }
+.box--2{position:absolute;left:100px;top:0px  }
+.box--3{position:absolute;left:200px;top:0px  }
+.box--4{position:absolute;left:300px;top:0px  }
+.box--5{position:absolute;left:0px;top:100px  }
+.box--6{position:absolute;left:100px;top:100px  }
+.box--7{position:absolute;left:200px;top:100px  }
+.box--8{position:absolute;left:300px;top:100px  }
+.box--9{position:absolute;left:0px;top:200px  }
+.box--10{position:absolute;left:100px;top:200px  }
+.box--11{position:absolute;left:200px;top:200px  }
+.box--12{position:absolute;left:300px;top:200px  }
+.box--13{position:absolute;left:0px;top:300px  }
+.box--14{position:absolute;left:100px;top:300px  }
+.box--15{position:absolute;left:200px;top:300px  }
+.box--16{position:absolute;left:300px;top:300px  }
+
+.transparentbox{
+    background-color: transparent;
+    color:transparent;
+}
