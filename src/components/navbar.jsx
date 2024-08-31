@@ -4,9 +4,8 @@ import './navbar.css'
 const navbar = () => {
   return (
     <div className="navbar">
-   Navbar
+   Made by Shubhraj
     </div>
   )
 }
-
 export default navbar

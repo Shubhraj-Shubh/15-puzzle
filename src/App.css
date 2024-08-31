@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Nerko+One&family=Sevillana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Matemasie&family=Nerko+One&display=swap');
 *{
   padding: 0;
   margin: 0;
@@ -18,21 +20,28 @@
 }
 
 .boxpuzzle{
-  width:40vw;
-  /* height:40vw; */
-  background-color: blueviolet;
-  margin:20px;
+  width:100vw;
+  height:95vh;
+  background-color: rgb(210, 151, 255);
   position:relative;
 }
 
 .heading{
   width:100%;
   height:10vw;
-  background-color: aquamarine;
-  color: blue;
+  background-color: rgb(128, 72, 187);
+  color: rgb(0, 0, 0);
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Handjet", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-variation-settings:
+    "ELGR" 1,
+    "ELSH" 2;
+    font-size: 50px;
 }
 .barbtn{
   display: flex;
@@ -52,7 +61,7 @@
   grid-template-columns:repeat(4,100px) ;
   grid-template-rows: repeat(4,100px);
   text-align: center;
-  border: 2px solid black;
+  border: 10px solid red;
   position:relative;
 }
 .card{
@@ -60,7 +69,119 @@
   height:100px;
   border:10px solid red;
   overflow: hidden;
-  z-index:5;
+  z-index: 5;
+  pointer-events: none;
   box-sizing:border-box;
 }
 
+.numbercard{
+  color:rgb(15, 14, 14);
+  background-color: rgb(0, 255, 251);
+width:100px;
+height:100px;
+display:flex;
+justify-content: center;
+align-items: center;
+transition: 150ms ease-in-out ;
+font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight:800;
+  font-style: normal;
+  font-size: 25px;
+}
+.rightbox{
+  background: rgb(230, 255, 1);
+}
+.box--1{position:absolute;left:0px;top:0px  }
+.box--2{position:absolute;left:100px;top:0px  }
+.box--3{position:absolute;left:200px;top:0px  }
+.box--4{position:absolute;left:300px;top:0px  }
+.box--5{position:absolute;left:0px;top:100px  }
+.box--6{position:absolute;left:100px;top:100px  }
+.box--7{position:absolute;left:200px;top:100px  }
+.box--8{position:absolute;left:300px;top:100px  }
+.box--9{position:absolute;left:0px;top:200px  }
+.box--10{position:absolute;left:100px;top:200px  }
+.box--11{position:absolute;left:200px;top:200px  }
+.box--12{position:absolute;left:300px;top:200px  }
+.box--13{position:absolute;left:0px;top:300px  }
+.box--14{position:absolute;left:100px;top:300px  }
+.box--15{position:absolute;left:200px;top:300px  }
+.box--16{position:absolute;left:300px;top:300px  }
+
+.transparentbox{
+  background-color: transparent;
+  color:transparent;
+}
+
+/* this is for button taken from flowbite */
+.gradient-button ,.moves{
+  color: rgb(255, 255, 255); /* text-white */
+  background: linear-gradient(to bottom right, #df0505, #096b3d); /* bg-gradient-to-br from-green-400 to-blue-600 */
+  font-weight: 500; /* font-medium */
+  border-radius: 0.5rem; /* rounded-lg */
+  font-size: 0.875rem; /* text-sm */
+  padding: 0.625rem 1.25rem; /* px-5 py-2.5 */
+  text-align: center; /* text-center */
+  margin-right: 0.5rem; /* me-2 */
+  margin-bottom: 0.5rem; /* mb-2 */
+  transition: background 0.3s ease; /* for smooth transition on hover and focus */
+  margin:10px;
+}
+
+.gradient-button:hover {
+  background: linear-gradient(to bottom left, #68D391, #4299E1); /* hover:bg-gradient-to-bl */
+}
+
+.gradient-button:focus {
+  outline: none; /* focus:outline-none */
+  box-shadow: 0 0 0 4px rgba(129, 230, 217, 0.5); /* focus:ring-4 focus:ring-green-200 */
+}
+
+.gradient-button:focus:focus-visible {
+  box-shadow: 0 0 0 4px rgba(56, 178, 172, 1); /* dark:focus:ring-green-800 */
+}
+
+@media screen and (max-width: 1250px){
+ .heading{
+   
+    height:30vh;
+
+  }
+
+}
+@media screen and (max-width: 450px){
+  .puzzlecontainer{
+    grid-template-columns:repeat(4,80px) ;
+    grid-template-rows: repeat(4,80px);
+    border: 5px solid red;
+  }
+.card{
+  width:80px;
+  height:80px;
+  border:5px solid red;
+}
+
+.numbercard{
+width:80px;
+height:80px;
+}
+
+.box--1{position:absolute;left:0px;top:0px  }
+.box--2{position:absolute;left:80px;top:0px  }
+.box--3{position:absolute;left:160px;top:0px  }
+.box--4{position:absolute;left:240px;top:0px  }
+.box--5{position:absolute;left:0px;top:80px  }
+.box--6{position:absolute;left:80px;top:80px  }
+.box--7{position:absolute;left:160px;top:80px  }
+.box--8{position:absolute;left:240px;top:80px  }
+.box--9{position:absolute;left:0px;top:160px  }
+.box--10{position:absolute;left:80px;top:160px  }
+.box--11{position:absolute;left:160px;top:160px  }
+.box--12{position:absolute;left:240px;top:160px  }
+.box--13{position:absolute;left:0px;top:240px  }
+.box--14{position:absolute;left:80px;top:240px  }
+.box--15{position:absolute;left:160px;top:240px  }
+.box--16{position:absolute;left:240px;top:240px  }
+
+}

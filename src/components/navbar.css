@@ -1,5 +1,7 @@
 .navbar{
     background-color: rgb(255, 127, 127);
     width:100vw;
+    height:5vh;
     text-align: center;
+    padding:auto;
 }
