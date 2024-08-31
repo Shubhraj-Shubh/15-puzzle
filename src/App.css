@@ -112,6 +112,7 @@ font-family: "Lora", serif;
 .transparentbox{
   background-color: transparent;
   color:transparent;
+  transition: none ;
 }
 
 /* this is for button taken from flowbite */
